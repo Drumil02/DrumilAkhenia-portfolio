@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&display=swap');
+
+:root {
+    --primary-color: #22d3ee;
+    --secondary-color: #60a5fa;
+    --dark-gray:#1e293b;
+    --imp-color : red;
+    --blue-background-color : #2563eb;
+    --light-gray : #e5e7eb;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0rem;
+}
+
+.container {
+    padding: 0rem 1rem;
+    font-size:1.4rem
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.links {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+/* padding : top right bottom left */
+/* padding : 4rem; ==> top = right = bottom = left = 4rem;
+padding : top right  ==> then top will be applied to bottom and right will be applid to left*/
+
+.link-primary {
+    background-color: var(--primary-color);
+}
+
+.link-secondary {
+    background-color: var(--secondary-color);
+}
+
+/* looks into BEM naming convations for CSS */
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline-block;
+    padding: 0rem 0.5rem;
+}
+
+.navigation{
+    background-color: var(--blue-background-color);
+}
+
+.navigation .nav-pills{
+    text-align: right;
+}
+.nav-brand{
+    font-weight: bold;
+    color:white;
+}
+
+.link-active{
+    font-weight:bold;
+}
+
+.hero{
+    padding:1rem;
+}
+
+.hero .hero-img{
+    max-width:350px;
+    display:block;
+    margin:auto;
+}
+
+.hero .hero-heading{
+    margin: auto;
+    max-width:700px;
+    padding-top: 1rem;
+    color:var(--dark-gray);
+}
+
+.hero .hero-heading .inside-hero-heading{
+    color : var(--imp-color);
+    font-size:40px;
+}
+
+.section{
+    padding: 2rem;
+}
+.section h1{
+    text-align: center;
+}
+
+.ow{
+    background-color:var(--light-gray);
+}
+
+.footer{
+    color:white;
+    background-color:var(--blue-background-color);
+    text-align:center;
+    padding:2rem 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.footer-header{
+    font-weight: bold;
+    font-size:large;
+}
